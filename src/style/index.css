@@ -19,7 +19,7 @@ html {
   }
 
   .title {
-    @apply pb-12 text-4xl font-semibold md:pb-16 md:text-5xl lg:text-7xl xl:pb-16 xl:text-8xl 2xl:pb-24 2xl:text-9xl;
+    @apply pb-12 text-4xl font-semibold md:pb-16 md:text-5xl lg:text-7xl xl:pb-12 xl:text-8xl 2xl:pb-24 2xl:text-9xl;
   }
 
   .paragraph {
@@ -27,6 +27,6 @@ html {
   }
 
   #terminal {
-    @apply -z-10 mb-10 w-full md:mb-16 md:w-3/5 lg:absolute lg:left-0 lg:bottom-0 lg:mb-0 lg:w-[460px] xl:w-[520px] 2xl:w-[720px] 3xl:w-[800px];
+    @apply -z-10 mb-10 w-full md:mb-16 md:w-3/5 lg:absolute lg:left-0 lg:bottom-0 lg:mb-0 lg:w-[460px] xl:w-[400px] 2xl:w-[720px] 3xl:w-[800px];
   }
 }
