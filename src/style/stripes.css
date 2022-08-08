@@ -80,7 +80,7 @@
 @media screen and (min-width: 1280px) {
   #one {
     top: 0;
-    transform: rotate(-40deg) translateX(-98%) translateY(80%);
+    transform: rotate(-40deg) translateX(-97.5%) translateY(80%);
   }
   #two {
     top: 22%;
