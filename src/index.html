@@ -7,7 +7,7 @@
       name="description"
       content="The KRC-3000 exchange terminal is a low-cost, easy-to-use token swapping terminal built on the state-of-the-art fuel.network"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://use.typekit.net/fxd6woo.css" />
@@ -32,59 +32,64 @@
     />
     <meta name="twitter:image" content="./assets/social-preview.png" />
   </head>
+
   <body class="bg-mcs-beige-100">
     <div
-      class="max-w-[1200px] mx-auto h-screen max-h-[900px] relative flex flex-col overflow-y-clip"
+      class="px-10 lg:px-0 mx-auto h-screen relative flex flex-col lg:overflow-y-clip lg:max-w-[900px] xl:max-w-[1200px] 2xl:max-w-[1550px] 3xl:max-w-[1750px] lg:max-h-[850px] xl:max-h-[900px] 2xl:max-h-[1200px] 3xl:max-h-[1350px]"
     >
-      <header class="py-12">
-        <img src="./assets/logo.png" alt="Logo" class="w-80" />
+      <header class="py-8 lg:py-12 xl:py-12 2xl:py-20">
+        <img src="./assets/logo.png" alt="Logo" class="w-52 md:w-64 lg:w-80" />
       </header>
 
       <main class="grow">
-        <h1 class="text-8xl pb-16 font-semibold">
+        <h1
+          class="text-4xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl pb-12 md:pb-16 xl:pb-16 2xl:pb-24 font-semibold"
+        >
           Introducing KRC-3000 exchange terminal
         </h1>
 
+        <!-- Terminal -->
+        <div
+          class="lg:absolute lg:left-0 lg:bottom-0 w-full md:w-3/5 lg:w-[460px] xl:w-[520px] 2xl:w-[720px] 3xl:w-[800px] -z-10 mb-10 md:mb-16 lg:mb-0"
+        >
+          <div class="relative w-full h-full">
+            <img
+              src="./assets/terminal.png"
+              alt="Man holding a KRC-3000 exchange terminal"
+              class="pointer-events-none relative z-10"
+            />
+            <div id="one" class="bg-mcs-blue stripe"></div>
+            <div id="two" class="bg-mcs-green stripe"></div>
+            <div id="three" class="bg-mcs-red stripe"></div>
+            <div id="four" class="bg-mcs-yellow stripe"></div>
+            <div id="five" class="bg-mcs-blue stripe"></div>
+          </div>
+        </div>
+
         <p
-          class="text-2xl font-normal pb-8 max-w-[560px] float-right mr-[250px]"
+          class="text-xl md:text-2xl xl:text-2xl 2xl:text-4xl font-normal pb-6 lg:pb-8 xl:pb-8 2xl:pb-12 3xl:pb-16 lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-[760px] 3xl:max-w-[860px] float-none lg:float-right lg:mr-[200px] xl:mr-[250px]"
         >
           A low-cost, easy-to-use token swapping terminal with two major
           benefits... versatility and simplicity.
         </p>
         <p
-          class="text-2xl font-normal pb-8 max-w-[560px] float-right mr-[150px]"
+          class="text-xl md:text-2xl xl:text-2xl 2xl:text-4xl font-normal pb-6 lg:pb-8 xl:pb-8 2xl:pb-12 3xl:pb-16 lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-[760px] 3xl:max-w-[860px] float-none lg:float-right lg:mr-[75px] xl:mr-[150px]"
         >
           Built on the state-of-the-art fuel.network, it can process over 10,000
           transactions per minute.
         </p>
         <p
-          class="text-2xl font-normal pb-8 max-w-[560px] float-right mr-[50px]"
+          class="text-xl md:text-2xl xl:text-2xl 2xl:text-4xl font-normal pb-6 lg:pb-8 xl:pb-8 2xl:pb-12 3xl:pb-16 lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-[760px] 3xl:max-w-[860px] float-none lg:float-right lg:mr-0 xl:mr-[50px]"
         >
           If fast, secure, and decentralized trades are what you are after, you
           simply can’t ignore KCR-3000 as an aid in your degenerate aping.
         </p>
       </main>
-      <footer class="pb-6">
-        <p class="text-lg text-right">
+      <footer class="pt-6 md:pt-0 pb-6 2xl:pb-10">
+        <p class="xl:text-lg 2xl:text-xl text-right">
           *wallet connector and status alert unit are sold seperately
         </p>
       </footer>
-
-      <!-- Terminal -->
-      <div class="absolute left-0 bottom-0 w-[520px] float-left -z-10">
-        <div class="relative w-full h-full">
-          <img
-            src="./assets/terminal.png"
-            alt="Man holding a KRC-3000 exchange terminal"
-            class="pointer-events-none relative z-10"
-          />
-          <div id="one" class="bg-mcs-blue stripe"></div>
-          <div id="two" class="bg-mcs-green stripe"></div>
-          <div id="three" class="bg-mcs-red stripe"></div>
-          <div id="four" class="bg-mcs-yellow stripe"></div>
-          <div id="five" class="bg-mcs-blue stripe"></div>
-        </div>
-      </div>
     </div>
   </body>
 </html>

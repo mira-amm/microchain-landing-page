@@ -13,6 +13,9 @@ module.exports = {
           green: { DEFAULT: "#01EC97" },
         },
       },
+      screens: {
+        "3xl": "1800px",
+      },
     },
   },
   plugins: [],
