@@ -9,19 +9,19 @@
 /* Mobile */
 #one {
   top: 0;
-  transform: rotate(-5deg) translateX(-98%) translateY(15%);
+  transform: rotate(-5deg) translateX(-97.8%) translateY(15%);
 }
 #two {
   top: 20%;
-  transform: rotate(-5deg) translateX(-98%) translateY(15%);
+  transform: rotate(-5deg) translateX(-97.8%) translateY(15%);
 }
 #three {
   top: 40%;
-  transform: rotate(-5deg) translateX(-98%) translateY(15%);
+  transform: rotate(-5deg) translateX(-97.8%) translateY(15%);
 }
 #four {
   top: 60%;
-  transform: rotate(-5deg) translateX(-98%) translateY(15%);
+  transform: rotate(-5deg) translateX(-97.8%) translateY(15%);
 }
 #five {
   top: 80%;
@@ -56,7 +56,7 @@
 @media screen and (min-width: 1024px) {
   #one {
     top: 0;
-    transform: rotate(-40deg) translateX(-97%) translateY(80%);
+    transform: rotate(-40deg) translateX(-98%) translateY(80%);
   }
   #two {
     top: 22%;
