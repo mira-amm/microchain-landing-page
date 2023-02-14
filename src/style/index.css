@@ -1,5 +1,10 @@
 @import "stripes.css";
 
+@font-face {
+  font-family: 'Roobert';
+  src: url('../fonts/Roobert-Regular.woff2') format('woff2');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +17,14 @@ html {
   font-smooth: always;
 }
 
+body {
+  background-color: #F0ECEC;
+}
+
+a {
+  color: #72A2FF;
+}
+
 /* Components */
 @layer components {
   .header {
@@ -19,19 +32,57 @@ html {
   }
 
   .container {
-    @apply relative mx-auto flex h-screen flex-col px-10 lg:max-h-[950px] lg:max-w-[900px] lg:overflow-y-clip lg:px-0 xl:max-h-[1200px] xl:max-w-[1200px] 2xl:max-h-[1300px] 2xl:max-w-[1550px] 4xl:max-h-[1500px] 4xl:max-w-[1750px];
+    @apply relative mx-auto flex h-screen flex-col px-10 lg:max-h-[950px] lg:max-w-[950px] lg:overflow-y-clip lg:px-0 xl:max-h-[1200px] xl:max-w-[1200px] 2xl:max-h-[1300px] 2xl:max-w-[1550px] 4xl:max-h-[1500px] 4xl:max-w-[1750px];
   }
 
   .title {
-    @apply pb-12 text-4xl font-semibold md:pb-16 md:text-5xl lg:pb-10 lg:text-6xl xl:pb-12 xl:text-7xl 2xl:pb-24 2xl:text-8xl 4xl:text-9xl;
+    @apply pb-12 text-6xl font-semibold pb-7;
   }
 
   .paragraph {
-    @apply float-none pb-6 text-xl font-normal md:text-2xl lg:float-right lg:max-w-[420px] lg:pb-8 xl:max-w-[560px] xl:pb-8 xl:text-2xl 2xl:max-w-[760px] 2xl:pb-12 2xl:text-4xl 4xl:max-w-[860px] 4xl:pb-16;
+    @apply pb-6 text-xl font-normal text-3xl;
   }
 
-  #terminal {
-    @apply -z-10 mb-10 w-full md:mb-16 md:w-3/5 lg:absolute lg:left-0 lg:bottom-0 lg:mb-0 lg:w-[360px] xl:w-[400px] 2xl:w-[500px] 3xl:w-[600px] 4xl:w-[720px];
+  .primaryButton {
+    background-color: #01EC97;
+    font-family: Roobert;
+    border-radius: 8px;
+  }
+  .primaryButton:hover {
+    background-color: #00C980;
+  }
+
+  .footerText {
+    font-family: Roobert;
+    font-size: 16px;
+  }
+  .relative {
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn-1 {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-2 {
+    width: 150px;
+    transition: all 0.3s ease;
+    transform: translateY(-40);
+  }
+
+  .btn-1:hover + .btn-2 {
+    transform: translateY(-150) rotate(-35deg);
+  }
+
+  .hider {
+    position: relative;
+    bottom: 120px;
+    Height: 90px;
+    Width: 150px;
+    background-color: #F0ECEC;
   }
 }
 
